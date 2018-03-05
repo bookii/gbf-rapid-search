@@ -7,10 +7,11 @@ import sys
 import time
 from requests_oauthlib import OAuth1Session
 
-CK = consumer_key
-CS = consumer_secret
-AT = access_token
-AS = access_token_secret
+# 取得したConsumer Key等と置き換えてください
+CK = 'consumer_key'
+CS = 'consumer_secret'
+AT = 'access_token'
+AS = 'access_token_secret'
 
 FILTER_URL = 'https://stream.twitter.com/1.1/statuses/filter.json'
 
