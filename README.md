@@ -13,6 +13,11 @@ IDをコピーするためのクリック動作が不要なため，同種の<st
 
 ## 準備
 
+### ライブラリのインストール
+```
+pip install requests_oauthlib
+```
+
 ### Consumer Keyの取得
 1. Twitterにログイン後，https://apps.twitter.com にアクセスして「Create New App」をクリック．
 ![apps_twitter_1](images/apps_twitter_1.png)  
@@ -39,11 +44,6 @@ IDをコピーするためのクリック動作が不要なため，同種の<st
 + Permissionについて  
 ツイートを取得するだけなのでRead onlyで構いません．
 ![apps_twitter_4](images/apps_twitter_4.png)
-
-### ライブラリのインストール
-```
-pip install requests_oauthlib
-```
 
 ## 使用方法
 
