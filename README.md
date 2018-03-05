@@ -1,7 +1,8 @@
+![demo](images/demo.png) 
+
 # グラブルTwitter救援検索ツール on Command Line
 
 コマンドラインで動くグラブルTwitter救援検索ツール．
-![demo](images/demo.png)  
 
 ## 概要  
 指定したマルチバトルの救援依頼ツイートを取得し，参戦IDを自動でクリップボードにコピーします．  
