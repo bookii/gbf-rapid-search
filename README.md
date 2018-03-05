@@ -13,7 +13,9 @@ IDをコピーするためのクリック動作が不要なため，同種の<st
 
 ### Consumer Keyの取得
 1. Twitterにログイン後，https://apps.twitter.com にアクセスして「Create New App」をクリック．
-![apps_twitter_1](images/apps_twitter_1.png)
+![apps_twitter_1](images/apps_twitter_1.png)  
+
+<br />
 
 2. 下のような画面が出てくるので，入力して「Create your Twitter application」をクリック．
 ![apps_twitter_2](images/apps_twitter_2.png)
@@ -28,15 +30,21 @@ IDをコピーするためのクリック動作が不要なため，同種の<st
    本ツールはWebアプリではないので適当に．
 
    + Callback URL  
-   空白で大丈夫です．
+   空白で大丈夫です．  
+
+<br />
 
 3. 「Keys and Access Tokens」タブより「Consumer Key」「Consumer Secret」を取得．さらに「Create my access token」をクリックすると「Access Token」「Access Token Secret」を取得できる．  
 ![apps_twitter_3](images/apps_twitter_3.png)
-これら4つのパラメータを`search.py`内の`consumer_key`以下4つのプレースホルダーと入れ替える．
+これら4つのパラメータを`search.py`内の`consumer_key`以下4つのプレースホルダーと入れ替える．  
+
+<br />
 
 + Permissionについて  
 ツイートを取得するだけなのでRead onlyで構いません．
 ![apps_twitter_4](images/apps_twitter_4.png)
+
+<br />
 
 ### ライブラリのインストール
 ```
@@ -55,7 +63,6 @@ python search.py 75 シュヴァリエ・マグナ
 ```
 + 取得したツイートがコマンドラインに表示され，同時に参戦IDがクリップボードにコピーされます．
 + 終了するときは`Ctrl+C`を押してください．
-
 
 ## その他
 + 日本語のみの対応です．
