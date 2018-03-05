@@ -29,7 +29,7 @@ def set_clipboard(string):
     process.communicate(string.encode("utf-8")) # str型をbyte型に変換
 
 def usage():
-    print('Usage: python3 %s enemy_level enemy_name' % sys.argv[0])
+    print('Usage: python3 %s level name' % sys.argv[0])
     print('Example: python3 %s 75 シュヴァリエ・マグナ' % sys.argv[0])
 
 def main():
