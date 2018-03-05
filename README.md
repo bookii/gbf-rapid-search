@@ -58,4 +58,4 @@ python search.py 75 シュヴァリエ・マグナ
 
 ## その他
 + 日本語のみの対応です．
-+ 2018年6月20日にUser StreamsなどいくつかのAPIを廃止するという[アナウンス](https://blog.twitter.com/developer/ja_jp/topics/tools/2017/aaa.html)がありましたが，本ツールが使用しているPublic Streamsは存続すると思われます．
++ 2018年6月20日にUser StreamsなどいくつかのAPIを廃止するという[Twitter社のアナウンス](https://blog.twitter.com/developer/ja_jp/topics/tools/2017/aaa.html)がありましたが，本ツールが使用しているPublic Streamsは存続すると思われます．
