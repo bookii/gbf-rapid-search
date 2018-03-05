@@ -6,6 +6,19 @@
 指定したマルチバトルの救援依頼ツイートを取得し，参戦IDを自動でクリップボードにコピーします．  
 IDをコピーするためのクリック動作が不要なため，同種の<strong>Webアプリよりクリック1回分早い</strong>です．
 
+## 使用方法
+
+```
+python search.py level name
+```
+### 例
+
+```
+python search.py 75 シュヴァリエ・マグナ
+```
++ 取得したツイートがコマンドラインに表示され，同時に参戦IDがクリップボードにコピーされます．
++ 終了するときは`Ctrl+C`を押してください．
+
 ## 必要なもの
 + Python3.x
 
@@ -42,19 +55,6 @@ pip install requests_oauthlib
 + Permissionについて  
 ツイートを取得するだけなのでRead onlyで構いません．
 ![apps_twitter_4](images/apps_twitter_4.png)
-
-## 使用方法
-
-```
-python search.py level name
-```
-### 例
-
-```
-python search.py 75 シュヴァリエ・マグナ
-```
-+ 取得したツイートがコマンドラインに表示され，同時に参戦IDがクリップボードにコピーされます．
-+ 終了するときは`Ctrl+C`を押してください．
 
 ## その他
 + 日本語のみの対応です．
