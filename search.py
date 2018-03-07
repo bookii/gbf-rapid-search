@@ -61,6 +61,7 @@ def main():
                         set_clipboard(raid_id)
 
     except KeyboardInterrupt:
+        print()
         sys.exit()
 
 if __name__ == "__main__":
