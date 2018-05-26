@@ -45,7 +45,7 @@ def parse(string):
 
 # テキストをクリップボードにコピー
 def set_clipboard(string):
-    process = subprocess.Popen('pbcopy', stdin = subprocess.PIPE)
+    process = subprocess.Popen(CMD_NAME, stdin = subprocess.PIPE, shell=IF_USES_SHELL)
     process.communicate(string.encode("utf-8")) # str型をbyte型に変換
 
 def usage():
