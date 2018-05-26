@@ -15,6 +15,25 @@ AS = 'access_token_secret'
 
 FILTER_URL = 'https://stream.twitter.com/1.1/statuses/filter.json'
 
+# params depend on OS
+CMD_NAME = ''
+IF_USES_SHELL = ''
+
+def set_os_params():
+    os_name = sys.platform
+    global CMD_NAME, IF_USES_SHELL
+
+    if os_name == 'win32':     # Windows
+        CMD_NAME = 'clip'
+        IF_USES_SHELL = True
+    elif os_name == 'darwin':    # Mac
+        CMD_NAME = 'pbcopy'
+        IF_USES_SHELL = False
+    else:
+        print("Don't understand this operating system.")
+        print("Try on Windows or Mac.")
+        sys.exit()
+
 # 文字列から参戦IDを抽出
 def parse(string):
     pattern = r'[0-9A-F]{8}\s:参戦ID'
@@ -39,7 +58,9 @@ def main():
         if len(args) != 3:
             usage()
             sys.exit()
-            
+        
+        set_os_params()
+
         # OAuth
         oauth_session = OAuth1Session(CK, CS, AT, AS)
         params = {'track': 'Lv%s %s' % (args[1], args[2])}
